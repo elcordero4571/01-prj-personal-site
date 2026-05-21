@@ -1,0 +1,420 @@
+/* ============================================
+   PERSONAL PORTFOLIO - JAPANESE THEME
+   ============================================
+   This CSS file styles the portfolio website
+   with a clean, minimalist design inspired by
+   Japanese aesthetics.
+   ============================================ */
+
+/* ============================================
+   1. GLOBAL STYLES
+   ============================================ */
+
+/* Reset default browser styles and set base styles */
+* {
+    margin: 0;           /* Remove default margins */
+    padding: 0;          /* Remove default padding */
+    box-sizing: border-box;  /* Include padding/border in element width */
+}
+
+/* Set styles for the entire page */
+html {
+    scroll-behavior: smooth;  /* Smooth scrolling when clicking navigation links */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;       /* Space between lines of text */
+    color: #2c3e3f;         /* Dark gray/teal - main text color */
+    background-color: #f5f3f0;  /* Light beige - inspired by Japanese paper */
+}
+
+/* Container - used to center content and limit width */
+.container {
+    max-width: 1200px;      /* Maximum width of content */
+    margin: 0 auto;         /* Center the container */
+    padding: 0 20px;        /* Padding on sides for mobile devices */
+}
+
+/* ============================================
+   2. HEADER & NAVIGATION
+   ============================================ */
+
+.header {
+    background-color: #fff;         /* White background */
+    border-bottom: 2px solid #d4c5b9;  /* Subtle light border */
+    position: sticky;               /* Stay at top when scrolling */
+    top: 0;
+    z-index: 100;                   /* Make sure it stays above other content */
+}
+
+/* Header container - flexbox for side-by-side layout */
+.header .container {
+    display: flex;                  /* Display items in a row */
+    justify-content: space-between; /* Space logo and nav apart */
+    align-items: center;            /* Vertically align items */
+    padding: 15px 20px;             /* Padding inside header */
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;                /* Large text size */
+    font-weight: bold;              /* Bold text */
+    color: #4a7c59;                 /* Japanese green */
+}
+
+/* Navigation styling */
+.navbar {
+    display: flex;                  /* Display links horizontally */
+    gap: 30px;                      /* Space between navigation links */
+}
+
+/* Navigation links */
+.navbar a {
+    text-decoration: none;          /* Remove underline */
+    color: #2c3e3f;                 /* Dark text color */
+    font-weight: 500;               /* Medium bold */
+    transition: color 0.3s ease;    /* Smooth color change on hover */
+}
+
+/* Navigation link hover effect */
+.navbar a:hover {
+    color: #d4a574;                 /* Golden color on hover (accent) */
+}
+
+/* ============================================
+   3. HERO SECTION
+   ============================================ */
+
+.hero {
+    background: linear-gradient(135deg, #f5f3f0 0%, #ebe6e1 100%);
+    padding: 100px 20px;            /* Space around content */
+    text-align: center;             /* Center align text */
+}
+
+/* Hero heading */
+.hero h1 {
+    font-size: 48px;                /* Large heading */
+    color: #4a7c59;                 /* Japanese green */
+    margin-bottom: 20px;            /* Space below heading */
+    font-weight: 300;               /* Light font weight for elegance */
+    letter-spacing: 2px;            /* Space between letters */
+}
+
+/* Hero subtitle */
+.hero p {
+    font-size: 18px;                /* Larger text */
+    color: #666;                    /* Medium gray */
+}
+
+/* ============================================
+   4. SECTION STYLES
+   ============================================ */
+
+.section {
+    padding: 80px 20px;             /* Space around section content */
+}
+
+/* Alternate background colors for visual interest */
+.section:nth-child(even) {
+    background-color: #fff;
+}
+
+/* Section headings */
+.section h2 {
+    font-size: 36px;                /* Large heading size */
+    color: #4a7c59;                 /* Japanese green */
+    margin-bottom: 50px;            /* Space below heading */
+    text-align: center;             /* Center align */
+    font-weight: 300;               /* Light weight for elegance */
+    letter-spacing: 1px;
+}
+
+/* ============================================
+   5. ABOUT SECTION
+   ============================================ */
+
+.about .content {
+    max-width: 700px;               /* Limit text width for readability */
+    margin: 0 auto;                 /* Center the content */
+    text-align: center;
+}
+
+.about p {
+    font-size: 16px;                /* Standard text size */
+    color: #555;                    /* Medium gray */
+    margin-bottom: 20px;            /* Space between paragraphs */
+    line-height: 1.8;               /* Extra space between lines */
+}
+
+/* ============================================
+   6. SKILLS SECTION
+   ============================================ */
+
+/* Grid layout for skill cards */
+.skills-grid {
+    display: flex;                  /* Use flexbox */
+    flex-wrap: wrap;                /* Wrap items to next line on small screens */
+    gap: 30px;                      /* Space between cards */
+    justify-content: center;        /* Center the cards */
+}
+
+/* Individual skill card */
+.skill-card {
+    background-color: #fff;
+    padding: 30px;                  /* Inside padding */
+    border-radius: 8px;             /* Rounded corners */
+    width: 220px;                   /* Set width */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease;  /* Smooth transform on hover */
+    border-top: 4px solid #4a7c59;  /* Green accent line on top */
+}
+
+/* Skill card hover effect */
+.skill-card:hover {
+    transform: translateY(-5px);    /* Move card up slightly */
+}
+
+.skill-card h3 {
+    color: #4a7c59;                 /* Green for subheadings */
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.skill-card p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* ============================================
+   7. PROJECTS SECTION
+   ============================================ */
+
+/* Grid layout for project cards */
+.projects-grid {
+    display: flex;                  /* Use flexbox */
+    flex-wrap: wrap;                /* Wrap on small screens */
+    gap: 40px;                      /* Space between project cards */
+}
+
+/* Individual project card */
+.project-card {
+    flex: 1;                        /* Equal width cards */
+    min-width: 300px;               /* Minimum width for mobile */
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;               /* Hide content that overflows */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Project card hover effect */
+.project-card:hover {
+    transform: translateY(-8px);    /* Lift card on hover */
+}
+
+/* Project image container */
+.project-image {
+    width: 100%;
+    height: 220px;                  /* Set fixed height */
+    overflow: hidden;               /* Hide image overflow */
+    background-color: #e8e3de;      /* Light beige background */
+}
+
+/* Project images */
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;              /* Fill space without distortion */
+}
+
+/* Project info section */
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    color: #4a7c59;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.project-info p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ============================================
+   8. BUTTONS
+   ============================================ */
+
+.button {
+    display: inline-block;          /* Allow padding/margin */
+    padding: 10px 20px;             /* Inside spacing */
+    background-color: #d4a574;      /* Golden color */
+    color: #fff;                    /* White text */
+    text-decoration: none;          /* No underline */
+    border-radius: 4px;             /* Slightly rounded */
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Button hover effect */
+.button:hover {
+    background-color: #c89760;      /* Darker gold */
+}
+
+/* ============================================
+   9. HOBBIES SECTION
+   ============================================ */
+
+/* Grid layout for hobby cards */
+.hobbies-grid {
+    display: flex;                  /* Use flexbox */
+    flex-wrap: wrap;                /* Wrap on small screens */
+    gap: 40px;                      /* Space between cards */
+}
+
+/* Individual hobby card */
+.hobby-card {
+    flex: 1;                        /* Equal width */
+    min-width: 280px;               /* Minimum width for mobile */
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #d4a574;  /* Golden accent on left */
+    transition: transform 0.3s ease;
+}
+
+/* Hobby card hover effect */
+.hobby-card:hover {
+    transform: translateX(5px);     /* Move card right on hover */
+}
+
+.hobby-card h3 {
+    color: #4a7c59;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.hobby-card p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* ============================================
+   10. CONNECT / CONTACT SECTION
+   ============================================ */
+
+.connect {
+    text-align: center;
+    background-color: #f0ebe6;      /* Light beige background */
+}
+
+.connect p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;                  /* Display links horizontally */
+    flex-wrap: wrap;                /* Wrap on small screens */
+    gap: 15px;                      /* Space between buttons */
+    justify-content: center;        /* Center the buttons */
+}
+
+/* Social media button styling */
+.social-button {
+    padding: 12px 30px;             /* Padding inside button */
+    background-color: #4a7c59;      /* Green background */
+    color: #fff;                    /* White text */
+    text-decoration: none;
+    border-radius: 25px;            /* Rounded pill shape */
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Social button hover effect */
+.social-button:hover {
+    background-color: #3d6248;      /* Darker green */
+}
+
+/* ============================================
+   11. FOOTER
+   ============================================ */
+
+.footer {
+    background-color: #2c3e3f;      /* Dark color */
+    color: #fff;                    /* White text */
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* ============================================
+   12. RESPONSIVE DESIGN (Mobile)
+   ============================================ */
+
+/* Styles for screens smaller than 768px (tablets, phones) */
+@media (max-width: 768px) {
+    /* Navigation - stack vertically on mobile */
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Make header navigation narrower */
+    .header .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /* Make hero heading smaller on mobile */
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    /* Make section headings smaller */
+    .section h2 {
+        font-size: 28px;
+    }
+
+    /* Skills grid - one column on small screens */
+    .skills-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Hobbies grid - one column on small screens */
+    .hobbies-grid {
+        flex-direction: column;
+    }
+
+    /* Reduce padding on sections for mobile */
+    .section {
+        padding: 50px 20px;
+    }
+}
+
+/* ============================================
+   COLOR PALETTE - Japanese Theme
+   ============================================
+   #4a7c59 - Japanese green (primary)
+   #d4a574 - Golden accent (accent)
+   #2c3e3f - Dark teal (text)
+   #f5f3f0 - Light beige (background)
+   #fff   - White
+   #666   - Medium gray
+   ============================================ */
