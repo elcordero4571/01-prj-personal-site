@@ -157,6 +157,8 @@ body {
     flex-wrap: wrap;                /* Wrap items to next line on small screens */
     gap: 30px;                      /* Space between cards */
     justify-content: center;        /* Center the cards */
+    align-items: center;            /* Vertically center cards */
+    width: 100%;
 }
 
 /* Individual skill card */
@@ -196,6 +198,9 @@ body {
     display: flex;                  /* Use flexbox */
     flex-wrap: wrap;                /* Wrap on small screens */
     gap: 40px;                      /* Space between project cards */
+    justify-content: center;        /* Center the cards horizontally */
+    align-items: stretch;           /* Stretch cards to equal height */
+    width: 100%;
 }
 
 /* Individual project card */
@@ -207,6 +212,8 @@ body {
     overflow: hidden;               /* Hide content that overflows */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Project card hover effect */
@@ -232,6 +239,11 @@ body {
 /* Project info section */
 .project-info {
     padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .project-info h3 {
@@ -276,6 +288,9 @@ body {
     display: flex;                  /* Use flexbox */
     flex-wrap: wrap;                /* Wrap on small screens */
     gap: 40px;                      /* Space between cards */
+    justify-content: center;        /* Center the cards horizontally */
+    align-items: center;            /* Vertically center cards */
+    width: 100%;
 }
 
 /* Individual hobby card */
@@ -288,6 +303,7 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #d4a574;  /* Golden accent on left */
     transition: transform 0.3s ease;
+    text-align: center;
 }
 
 /* Hobby card hover effect */
@@ -328,6 +344,7 @@ body {
     flex-wrap: wrap;                /* Wrap on small screens */
     gap: 15px;                      /* Space between buttons */
     justify-content: center;        /* Center the buttons */
+    width: 100%;
 }
 
 /* Social media button styling */
