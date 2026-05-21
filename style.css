@@ -1,1 +1,104 @@
-/* Add you CSS here */
+/* Simple beginner-friendly style */
+
+:root {
+  font-family: Arial, sans-serif;
+  background-color: #eef2f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.site-header {
+  background-color: #1d4ed8;
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0 0 10px;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.card p,
+.card ul {
+  margin: 0 0 16px;
+}
+
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.split > div {
+  flex: 1 1 260px;
+}
+
+.site-footer {
+  background-color: #f8fafc;
+  color: #475569;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 640px) {
+  .site-header {
+    padding: 30px 0;
+  }
+
+  .site-header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 24px 0;
+  }
+
+  .split {
+    flex-direction: column;
+  }
+}
